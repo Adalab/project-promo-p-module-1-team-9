@@ -29,7 +29,7 @@
 .title {
   font-family: "Rubik", sans-serif;
   margin: 0;
-  padding: ;
+  padding: 0; /* No tenia valor y estaba quejándose */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,4 +105,43 @@
 .main {
   position: relative;
   top: 46px;
+  min-height: 50px; /* Mínimo de alto para que no pise con el footer*/
+}
+/* estilos footer */
+
+.footer {
+  padding: 30px;
+  border: solid 1px #b8b8b9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.group-name-footer {
+  width: 100%; /* comentar con Analia */
+  color: #b8b8b9;
+  font-family: "OpenSans", sans-serif;
+}
+
+.footer-links {
+  width: 100%; /* comentar con Analia */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.footer-link {
+  width: 100%; /* comentar con Analia */
+  text-transform: uppercase;
+  font-family: "OpenSans-Semibold", sans-serif;
+  color: #54585a;
+}
+
+.footer-logo {
+  width: 115px;
+  padding-top: 30px;
 }
