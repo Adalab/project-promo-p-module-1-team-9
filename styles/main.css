@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 320px;
+}
+
+:root {
+  height: 100%;
+}
+
+.header {
+  height: 421px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.title {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #099d8d;
+  opacity: 0.95;
+  width: 100%;
+  height: 60px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.links {
+  font-family: "Rubik", sans-serif;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #14d9c4;
+  opacity: 0.9;
+  color: #fff;
+}
+
+.team,
+.about-us,
+.contact {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+
+.about-us {
+  text-align: center;
+}
+
+.hero {
+  height: 421px;
+  position: absolute;
+  top: 0;
+}
+
+.image-hero {
+  width: 320px;
+  height: 421px;
+  margin: 0 0 46px;
+}
+
+.container-motto {
+  width: 290px;
+  height: 80px;
+  margin: 0px 15px;
+  position: absolute;
+  top: 387px;
+  background-color: #fff;
+  padding: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.motto {
+  width: 260px;
+  height: 50px;
+  font-family: "OpenSans", sans-serif;
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+  letter-spacing: normal;
+  line-height: 1.39;
+}
+
+.main {
+  position: relative;
+  top: 46px;
+}
