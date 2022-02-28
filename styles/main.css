@@ -9,6 +9,7 @@
 
   /** Colores **/
   --aqua: #14d9c4;
+  --aqua09: rgba(20, 217, 196, 0.9);
   --blueGreen: #099d8d;
   --black: #000;
   --blackParagraph: #54585a;
@@ -31,103 +32,65 @@
 }
 
 .header {
-  height: 421px;
-  display: flex;
-  flex-direction: column;
-  position: sticky;
-  z-index: 5;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  width: 100%;
+  height: 421rem;
+  background-image: url(../images/coding.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title {
-  font-family: "Rubik", sans-serif;
+  height: 60rem;
   margin: 0;
-  padding: 0; /* No tenia valor y estaba quejándose */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #099d8d;
-  opacity: 0.95;
-  width: 100%;
-  height: 60px;
-  font-size: 16px;
-  color: #fff;
+  line-height: 60rem;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16rem;
+  font-family: var(--rubik);
+  font-weight: var(--medium);
+  color: var(--white);
+  background-color: var(--blueGreen);
 }
 
 .links {
-  width: 320px;
-  height: 45px;
-  font-family: "Rubik", sans-serif;
+  width: 100%;
+  height: 45rem;
+  font-size: 15rem;
+  font-family: var(--rubik);
+  font-weight: var(--medium);
+  line-height: 30rem;
+  color: var(--white);
+  background-color: var(--aqua09);
   list-style: none;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  background-color: #14d9c4;
-  opacity: 0.9;
-  color: #fff;
-  white-space: nowrap;
 }
 
 .team,
 .about-us,
 .contact {
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1 1 auto;
-}
-
-.about-us {
-  text-align: center;
-}
-
-.hero {
-  height: 421px;
-  position: absolute;
-  top: 0;
-}
-
-.image-hero {
-  width: 320px;
-  height: 421px;
-  margin: 0 0 46px;
+  font-size: inherit;
 }
 
 .container-motto {
-  width: 290px;
-  height: 80px;
-  z-index: 10;
-  margin: 0px 15px;
+  width: 290rem;
+  height: 80rem;
+  margin: 0 auto;
   position: absolute;
-  top: 387px;
-  background-color: #fff;
-  padding: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  left: 15px;
+  top: 387rem;
+  text-align: center;
+  padding: 0 15rem;
+  background-color: var(--white);
 }
 
 .motto {
-  width: 260px;
-  height: 50px;
-  font-family: "OpenSans", sans-serif;
-  font-size: 18px;
+  font-family: var(--openSans);
+  font-size: 18rem;
   font-weight: var(--semiBold);
-  color: #000;
-  text-align: center;
-  letter-spacing: normal;
-  line-height: 1.39;
+  color: var(--black);
+  line-height: 25rem;
 }
 
 /* MAIN */
@@ -308,11 +271,9 @@
 
 /* FOOTER */
 
-/* estilos footer */
-
 .footer {
   padding: 30px;
-  border: solid 1px #b8b8b9;
+  border-top: solid 1px #b8b8b9;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -322,24 +283,29 @@
 }
 
 .group-name-footer {
-  width: 100%; /* comentar con Analia */
+  width: 100%;
   color: #b8b8b9;
   font-family: "OpenSans", sans-serif;
+  font-size: 14rem;
+  line-height: 20rem;
 }
 
 .footer-links {
-  width: 100%; /* comentar con Analia */
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 20rem;
+  line-height: 20rem;
 }
 
 .footer-link {
-  width: 100%; /* comentar con Analia */
+  width: 100%;
   text-transform: uppercase;
   font-family: "OpenSans-Semibold", sans-serif;
+  font-size: 14px;
   color: #54585a;
+  line-height: 20rem;
 }
 
 .footer-logo {
