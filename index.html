@@ -18,19 +18,19 @@
   <link rel="stylesheet" href="./styles/normalize.css" />
   <link rel="stylesheet" href="./styles/main.css" />
 
-  <title>Document</title>
+  <title>Codebreakers</title>
 </head>
 
 <body>
   <!--HEADER START///////////////////////////////////-->
   <header class="header">
 
-    <h1 class="title">CODEBREAKERS</h1>
+    <h1 class="title">Codebreakers</h1>
     <nav>
       <ul class="links">
-        <li class="team">EQUIPO</li>
-        <li class="about-us">QUIÉNES SOMOS</li>
-        <li class="contact">CONTACTO</li>
+        <li class="team"><a href="./index.html#team">Equipo</a></li>
+        <li class="about-us"><a href="./index.html#aboutus">Quiénes somos</a></li>
+        <li class="contact"><a href="#">Contacto</a></li>
       </ul>
     </nav>
 
@@ -42,7 +42,7 @@
 
   <main class="main">
     <section class="main-team">
-      <h2>equipo</h2>
+      <h2 id="team">Equipo</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
         libero fugit neque reiciendis laboriosam ad atque quidem, voluptatem
@@ -84,7 +84,7 @@
     </section>
 
     <section class="main-about-us">
-      <h2>Quienes somos</h2>
+      <h2 id="aboutus">Quiénes somos</h2>
       <article>
         <div class="img-mau img-mau-001"></div>
         <h4>Analía Río</h4>
@@ -98,8 +98,8 @@
           infinidad de culturas e indispensable en nuestra sociedad actual.
         </p>
         <div class="some-mau">
-          <i class="fa-brands fa-twitter"></i>
-          <span class="point001">·</span>
+          <!--  <i class="fa-brands fa-twitter"></i>
+          <span class="point001">·</span> -->
           <i class="fa-brands fa-linkedin-in"></i>
           <span class="point002">·</span>
           <i class="fa-brands fa-github-alt"></i>
@@ -117,8 +117,8 @@
           consectetur, consequatur quae?
         </p>
         <div class="some-mau">
-          <i class="fa-brands fa-twitter"></i>
-          <span class="point001">·</span>
+          <!-- <i class="fa-brands fa-twitter"></i>
+          <span class="point001">·</span> -->
           <i class="fa-brands fa-linkedin-in"></i>
           <span class="point002">·</span>
           <i class="fa-brands fa-github-alt"></i>
@@ -138,13 +138,15 @@
           Lover y admiradora de la gente creativa y apasionada de su trabajo.
         </p>
         <div class="some-mau">
-          <i class="fa-brands fa-twitter"></i>
+          <a href="https://twitter.com/naiarasaratxaga
+          " target="_blank"><i class="fa-brands fa-twitter"></i></a>
           <span class="point001">·</span>
-          <i class="fa-brands fa-linkedin-in"></i>
+          <a href="https://www.linkedin.com/in/naiara-saratxaga-17abb030/
+          " target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
           <span class="point002">·</span>
-          <i class="fa-brands fa-github-alt"></i>
+          <a href="https://github.com/NaiSaratxaga" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
           <span class="point003">·</span>
-          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:nsaratxaga@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </article>
       <article>
@@ -157,8 +159,8 @@
           consectetur, consequatur quae?
         </p>
         <div class="some-mau">
-          <i class="fa-brands fa-twitter"></i>
-          <span class="point001">·</span>
+          <!-- <i class="fa-brands fa-twitter"></i>
+          <span class="point001">·</span> -->
           <i class="fa-brands fa-linkedin-in"></i>
           <span class="point002">·</span>
           <i class="fa-brands fa-github-alt"></i>
@@ -171,13 +173,19 @@
   </main>
   <!--Footer /////////////////////////////////////-->
   <footer class=footer>
-    <div class="group-name-footer">Codebreakers © 2022 </div>
+    <small class="group-name-footer">Codebreakers © 2022 </small>
     <nav class="footer-links">
-      <a class="footer-link">Equipo</a>
-      <a class="footer-link">Quiénes somos</a>
-      <a class="footer-link">Contacto</a>
+      <ul>
+        <li><a href="./index.html#team" class="footer-link">Equipo</a></li>
+        <li> <a href="./index.html#aboutus" class="footer-link">Quiénes somos</a>
+        </li>
+        <li> <a href="http://adalab.es" target="_blank" class="footer-link">Contacto</a>
+        </li>
+      </ul>
+
     </nav>
-    <img class="footer-logo" src="./images/logo-adalab.png" alt="Logo Adalab">
+    <a href="http://adalab.es" target="_blank"><img class="footer-logo" src="./images/logo-adalab.png"
+        alt="Logo Adalab"></a>
   </footer>
 </body>
 

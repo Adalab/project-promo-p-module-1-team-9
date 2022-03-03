@@ -13,9 +13,14 @@
   --blueGreen: #099d8d;
   --black: #000;
   --blackParagraph: #54585a;
-  --coolGrey: #b8b8b9;
+  --coolGrey: rgba(184, 184, 185, 0.2);
   --blackBorder: rgba(0, 0, 0, 0.08);
   --white: #fff;
+
+  /* Igualar el tamaño de las unidades REM al tamaño relativo de los píxeles */
+  /* 6.25% = 1px de 16px */
+  /* 1 REM = 1PX */
+  font-size: 6.25%;
 }
 
 * {
@@ -24,11 +29,16 @@
   box-sizing: border-box;
   /* width: 320px; */
   /* Lo comento porque puesto en "*" fuerza a que todos los elementos tengan por defecto una anchura de 320px que si no se sobreescribe genera problemas más adelante. */
+  font-size: 16rem;
+}
 
-  /* Igualar el tamaño de las unidades REM al tamaño relativo de los píxeles */
-  /* 6.25% = 1px de 16px */
-  /* 1 REM = 1PX */
-  font-size: 6.25%;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
 }
 
 .header {
@@ -48,6 +58,7 @@
   font-size: 16rem;
   font-family: var(--rubik);
   font-weight: var(--medium);
+  text-transform: uppercase;
   color: var(--white);
   background-color: var(--blueGreen);
 }
@@ -71,12 +82,15 @@
 .about-us,
 .contact {
   font-size: inherit;
+  text-transform: uppercase;
 }
 
 .container-motto {
   width: 290rem;
   height: 80rem;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
   position: absolute;
   left: 15px;
   top: 387rem;
@@ -255,6 +269,7 @@
 }
 
 .some-mau > i,
+.some-mau > a > i,
 .some-mau > span {
   font-size: 15rem;
   font-weight: var(--regular);
