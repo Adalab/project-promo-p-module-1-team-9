@@ -1,5 +1,65 @@
-.page__header {
+.header {
+  width: 100%;
+  height: 421rem;
+  background-image: url(../images/coding.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  height: 60rem;
+  margin: 0;
+  line-height: 60rem;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16rem;
+  font-family: var(--rubik);
+  font-weight: var(--medium);
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--blueGreen);
+}
+
+.links {
+  width: 100%;
+  height: 45rem;
+  font-size: 15rem;
+  font-family: var(--rubik);
+  font-weight: var(--medium);
+  line-height: 30rem;
+  color: var(--white);
+  background-color: var(--aqua09);
+  list-style: none;
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.team,
+.about-us,
+.contact {
+  font-size: inherit;
+  text-transform: uppercase;
+}
+
+.container-motto {
+  width: 290rem;
+  height: 80rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 15px;
+  top: 387rem;
+  text-align: center;
+  padding: 0 15rem;
+  background-color: var(--white);
+}
+
+.motto {
+  font-family: var(--openSans);
+  font-size: 18rem;
+  font-weight: var(--semiBold);
+  color: var(--black);
+  line-height: 25rem;
 }

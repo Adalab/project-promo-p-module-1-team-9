@@ -1,6 +1,18 @@
-// fonts
-$font-main: 'Roboto', sans-serif;
+:root {
+  /* Tipografías */
+  --rubik: "Rubik", sans-serif;
+  --openSans: "OpenSans", sans-serif;
+  --regular: 400;
+  --medium: 500;
+  --semiBold: 600;
 
-// colors
-$color-bg: #f3f4f5;
-$color-secondary: #999;
+  /* Colores */
+  --aqua: #14d9c4;
+  --aqua09: rgba(20, 217, 196, 0.9);
+  --blueGreen: #099d8d;
+  --black: #000;
+  --blackParagraph: #54585a;
+  --coolGrey: rgba(184, 184, 185, 0.2);
+  --blackBorder: rgba(0, 0, 0, 0.08);
+  --white: #fff;
+}
