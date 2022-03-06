@@ -2,109 +2,149 @@
   width: 100%;
   min-width: 320rem;
   text-align: center;
-}
 
-/* MAIN-TEAM */
-.main-team {
-  padding: 76rem 15rem 15rem 15rem;
-}
+  /* MAIN-TEAM */
+  &__team {
+    padding: 76rem 15rem 15rem 15rem;
 
-.main-team > h2 {
-  font-family: var(--rubik);
-  font-size: 24rem;
-  font-weight: var(--medium);
-  line-height: 45rem;
-  text-transform: uppercase;
-  color: var(--aqua);
-}
+    & h2 {
+      font-family: var(--rubik);
+      font-size: 24rem;
+      font-weight: var(--medium);
+      line-height: 45rem;
+      text-transform: uppercase;
+      color: var(--aqua);
+    }
 
-.main-team > p {
-  padding: 15rem 0;
-  font-family: var(--openSans);
-  font-size: 16rem;
-  font-weight: var(--regular);
-  line-height: 24rem;
-  color: var(--blackParagraph);
-}
+    & p {
+      padding: 15rem 0;
+      font-family: var(--openSans);
+      font-size: 16rem;
+      font-weight: var(--regular);
+      line-height: 24rem;
+      color: var(--blackParagraph);
+    }
+  }
+  /* END OF MAIN-TEAM */
 
-/* END OF MAIN-TEAM */
-/*  */
-/* DIAMOND */
+  /* DIAMOND */
+  &__diamond {
+    width: 100%;
+    height: 30rem;
 
-.diamond-container {
-  width: 100%;
-  height: 30rem;
+    position: relative;
+    top: -15rem;
 
-  position: relative;
-  top: -15rem;
+    display: flex;
+    justify-content: center;
 
-  display: flex;
-  justify-content: center;
-}
+    &--rotate {
+      width: 30rem;
+      height: 30rem;
+      z-index: 10;
+      transform: rotate(45deg);
+      background-color: var(--white);
+    }
+  }
+  /* END OF DIAMOND */
 
-.diamond {
-  width: 30rem;
-  height: 30rem;
-  z-index: 10;
-  transform: rotate(45deg);
-  background-color: var(--white);
-}
+  /* MAIN WOTS */
+  &__wots {
+    position: relative;
+    top: -30rem;
+    padding: 0rem 15rem 45rem 15rem;
+    margin-bottom: -30rem;
+    background-color: var(--coolGrey);
+  }
 
-/* END OF DIAMOND */
-/*  */
-/* MAIN STRENGHTS WEAKNESSES */
+  &__wots article h2 {
+    padding: 30rem 0 0 0;
+    font-family: var(--rubik);
+    font-size: 22rem;
+    font-weight: var(--medium);
+    line-height: 45rem;
+    text-transform: capitalize;
+    color: var(--blueGreen);
+    top: 46px;
+    min-height: 50px; /* Mínimo de alto para que no pise con el footer*/
+  }
 
-.main-strenghts-weaknesses {
-  position: relative;
-  top: -30rem;
-  padding: 0rem 15rem 45rem 15rem;
-  margin-bottom: -30rem;
-  background-color: var(--coolGrey);
-}
+  &__wots article p {
+    font-family: var(--openSans);
+    font-size: 16rem;
+    font-weight: var(--regular);
+    line-height: 24rem;
+    color: var(--blackParagraph);
+  }
+  /* END OF MAIN WOTS */
 
-.main-strenghts-weaknesses > article > h2 {
-  padding: 30rem 0 0 0;
-  font-family: var(--rubik);
-  font-size: 22rem;
-  font-weight: var(--medium);
-  line-height: 45rem;
-  text-transform: capitalize;
-  color: var(--blueGreen);
-  top: 46px;
-  min-height: 50px; /* Mínimo de alto para que no pise con el footer*/
-}
+  /* MAIN ABOUT US */
+  &__aboutus {
+    padding: 0 15rem;
 
-.main-strenghts-weaknesses > article > p {
-  font-family: var(--openSans);
-  font-size: 16rem;
-  font-weight: var(--regular);
-  line-height: 24rem;
-  color: var(--blackParagraph);
-}
+    & h2 {
+      padding: 30rem 0;
+      font-family: var(--rubik);
+      font-size: 24rem;
+      font-weight: var(--medium);
+      line-height: 45rem;
+      text-transform: uppercase;
+      color: var(--blueGreen);
+    }
 
-/* END OF MAIN STRENGHTS WEAKNESSES */
-/*  */
-/* MAIN ABOUT US */
+    & article {
+      padding-bottom: 45rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-.main-about-us {
-  padding: 0 15rem;
-}
+      & .img-mau {
+        width: 190rem;
+        height: 190rem;
+        border: solid 5rem var(--blackBorder);
+        border-radius: 4rem;
+        background-size: contain;
+      }
 
-.main-about-us > h2 {
-  padding: 30rem 0;
-  font-family: var(--rubik);
-  font-size: 24rem;
-  font-weight: var(--medium);
-  line-height: 45rem;
-  text-transform: uppercase;
-  color: var(--blueGreen);
-}
+      & h4 {
+        padding-top: 15rem;
+        font-family: var(--openSans);
+        font-size: 20rem;
+        font-weight: var(--regular);
+        line-height: 45rem;
+        text-transform: capitalize;
+        color: var(--black);
+      }
 
-.main-about-us > article {
-  padding-bottom: 45rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+      & p {
+        padding-bottom: 15rem;
+        font-family: var(--openSans);
+        font-size: 16rem;
+        font-weight: var(--regular);
+        line-height: 24rem;
+        color: var(--blackParagraph);
+      }
+
+      & .some-mau {
+        width: 124rem;
+        height: 30rem;
+        display: flex;
+        justify-content: space-between;
+
+        & a i,
+        span {
+          font-size: 15rem;
+          font-weight: var(--regular);
+          line-height: 30rem;
+          color: var(--blueGreen);
+        }
+
+        & i:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
 
 .img-mau-001 {
@@ -122,52 +162,4 @@
 .img-mau-004 {
   background: url(../images/about-us/satory.jpg) no-repeat;
 }
-
-.img-mau {
-  width: 190rem;
-  height: 190rem;
-  border: solid 5rem var(--blackBorder);
-  border-radius: 4rem;
-  background-size: contain;
-}
-
-.main-about-us > article > h4 {
-  padding-top: 15rem;
-  font-family: var(--openSans);
-  font-size: 20rem;
-  font-weight: var(--regular);
-  line-height: 45rem;
-  text-transform: capitalize;
-  color: var(--black);
-}
-
-.main-about-us > article > p {
-  padding-bottom: 15rem;
-  font-family: var(--openSans);
-  font-size: 16rem;
-  font-weight: var(--regular);
-  line-height: 24rem;
-  color: var(--blackParagraph);
-}
-
-.some-mau {
-  width: 124rem;
-  height: 30rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.some-mau > i,
-.some-mau > a > i,
-.some-mau > span {
-  font-size: 15rem;
-  font-weight: var(--regular);
-  line-height: 30rem;
-  color: var(--blueGreen);
-}
-
-.some-mau > i:hover {
-  cursor: pointer;
-}
-
 /* END OF MAIN ABOUT US */
