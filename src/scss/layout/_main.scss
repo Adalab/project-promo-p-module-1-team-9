@@ -123,86 +123,27 @@
       }
     }
 
-    & article {
-      padding-bottom: 45rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      @media all and (min-width: 768px) {
-        //-----esta
+    @media all and (min-width: 768px) {
+      .switch-right {
         flex-direction: row-reverse;
-        align-items: flex-start;
-        padding-bottom: 60rem;
       }
 
-      & .container-mau {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        @media all and (min-width: 768px) {
-          //esta
-          align-items: flex-end;
-          //esta esta igual
-          justify-content: flex-start;
-          //esta
-          text-align: right;
-          //esta
-          padding-right: 30rem;
-        }
-      }
-      /* 
-    & article {
-      padding-bottom: 45rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      @media all and (min-width: 768px) {
+      .switch-left {
         flex-direction: row;
-        align-items: flex-start;
-        padding-bottom: 60rem;
       }
+    }
 
-      & .container-mau {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        @media all and (min-width: 768px) {
-          align-items: flex-start;
-          justify-content: flex-start;
-          text-align: left;
-          padding-left: 30rem;
-        }
-      }
-
-      & article {
+    & article {
       padding-bottom: 45rem;
       display: flex;
       flex-direction: column;
       align-items: center;
 
       @media all and (min-width: 768px) {
-        flex-direction: row-reverse;
         align-items: flex-start;
         padding-bottom: 60rem;
       }
 
-      & .container-mau {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        @media all and (min-width: 768px) {
-          align-items: flex-end;
-          justify-content: flex-start;
-          text-align: right;
-          padding-right: 30rem;
-        }
-      }
-*/
       & .img-mau {
         width: 190rem;
         height: 190rem;
@@ -257,6 +198,32 @@
         & i:hover {
           cursor: pointer;
         }
+      }
+    }
+
+    .container-mau {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media all and (min-width: 768px) {
+        justify-content: flex-start;
+      }
+    }
+
+    .switch-right .container-mau {
+      @media all and (min-width: 768px) {
+        align-items: flex-end;
+        text-align: right;
+        padding-right: 30rem;
+      }
+    }
+
+    .switch-left .container-mau {
+      @media all and (min-width: 768px) {
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 30rem;
       }
     }
   }
