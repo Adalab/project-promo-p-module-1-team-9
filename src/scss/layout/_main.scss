@@ -130,6 +130,36 @@
       align-items: center;
 
       @media all and (min-width: 768px) {
+        //-----esta
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        padding-bottom: 60rem;
+      }
+
+      & .container-mau {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media all and (min-width: 768px) {
+          //esta
+          align-items: flex-end;
+          //esta esta igual
+          justify-content: flex-start;
+          //esta
+          text-align: right;
+          //esta
+          padding-right: 30rem;
+        }
+      }
+      /* 
+    & article {
+      padding-bottom: 45rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media all and (min-width: 768px) {
         flex-direction: row;
         align-items: flex-start;
         padding-bottom: 60rem;
@@ -148,6 +178,31 @@
         }
       }
 
+      & article {
+      padding-bottom: 45rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media all and (min-width: 768px) {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        padding-bottom: 60rem;
+      }
+
+      & .container-mau {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media all and (min-width: 768px) {
+          align-items: flex-end;
+          justify-content: flex-start;
+          text-align: right;
+          padding-right: 30rem;
+        }
+      }
+*/
       & .img-mau {
         width: 190rem;
         height: 190rem;
