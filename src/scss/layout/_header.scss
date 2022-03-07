@@ -5,6 +5,15 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    & nav {
+      flex-grow: 3;
+    }
+  }
+
   &__title {
     height: 60rem;
     margin: 0;
@@ -17,6 +26,12 @@
     text-transform: uppercase;
     color: $white;
     background-color: $blueGreen;
+
+    @media all and (min-width: 768px) {
+      padding: 0 45rem;
+      text-align: left;
+      flex-grow: 1;
+    }
   }
 
   &__links {
@@ -33,9 +48,20 @@
     justify-content: space-evenly;
     align-items: center;
 
+    @media all and (min-width: 768px) {
+      height: 60rem;
+      padding: 0 20rem 0 0;
+      background-color: $blueGreen;
+      justify-content: flex-end;
+    }
+
     & li {
       font-size: inherit;
       text-transform: uppercase;
+
+      @media all and (min-width: 768px) {
+        padding: 0 10rem;
+      }
     }
   }
 }
@@ -52,6 +78,15 @@
   text-align: center;
   padding: 0 15rem;
   background-color: $white;
+
+  @media all and (min-width: 768px) {
+    width: 441rem;
+    padding: 15rem 30rem;
+    text-align: left;
+    left: 46rem;
+    top: 341rem;
+    background-color: $white08;
+  }
 
   & p {
     font-family: $openSans;
