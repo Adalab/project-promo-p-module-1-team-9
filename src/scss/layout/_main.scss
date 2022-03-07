@@ -7,6 +7,10 @@
   &__team {
     padding: 76rem 15rem 15rem 15rem;
 
+    @media all and (min-width: 768px) {
+      padding: 45rem 45rem 60rem 45rem;
+    }
+
     & h2 {
       font-family: $rubik;
       font-size: 24rem;
@@ -14,6 +18,10 @@
       line-height: 45rem;
       text-transform: uppercase;
       color: $aqua;
+
+      @media all and (min-width: 768px) {
+        color: $blueGreen;
+      }
     }
 
     & p {
@@ -55,6 +63,18 @@
     padding: 0rem 15rem 45rem 15rem;
     margin-bottom: -30rem;
     background-color: $coolGrey;
+
+    @media all and (min-width: 768px) {
+      padding: 45rem 30rem 60rem 30rem;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__wots article {
+    @media all and (min-width: 768px) {
+      padding: 0 15rem;
+      flex-basis: 50%;
+    }
   }
 
   &__wots article h2 {
@@ -67,6 +87,9 @@
     color: $blueGreen;
     top: 46px;
     min-height: 50px; /* Mínimo de alto para que no pise con el footer*/
+    @media all and (min-width: 768px) {
+      padding: 0;
+    }
   }
 
   &__wots article p {
@@ -82,6 +105,10 @@
   &__aboutus {
     padding: 0 15rem;
 
+    @media all and (min-width: 768px) {
+      padding: 0 45rem;
+    }
+
     & h2 {
       padding: 30rem 0;
       font-family: $rubik;
@@ -90,6 +117,10 @@
       line-height: 45rem;
       text-transform: uppercase;
       color: $blueGreen;
+
+      @media all and (min-width: 768px) {
+        padding: 45rem 0 41rem 0;
+      }
     }
 
     & article {
@@ -98,12 +129,38 @@
       flex-direction: column;
       align-items: center;
 
+      @media all and (min-width: 768px) {
+        flex-direction: row;
+        align-items: flex-start;
+        padding-bottom: 60rem;
+      }
+
+      & .container-mau {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media all and (min-width: 768px) {
+          align-items: flex-start;
+          justify-content: flex-start;
+          text-align: left;
+          padding-left: 30rem;
+        }
+      }
+
       & .img-mau {
         width: 190rem;
         height: 190rem;
         border: solid 5rem $blackBorder;
         border-radius: 4rem;
         background-size: contain;
+
+        @media all and (min-width: 768px) {
+          width: 215rem;
+          min-width: 215rem;
+          height: 215rem;
+          min-height: 215rem;
+        }
       }
 
       & h4 {
@@ -114,6 +171,9 @@
         line-height: 45rem;
         text-transform: capitalize;
         color: $black;
+        @media all and (min-width: 768px) {
+          padding-top: 0;
+        }
       }
 
       & p {
