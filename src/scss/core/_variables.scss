@@ -1,18 +1,17 @@
-:root {
-  /* Tipografías */
-  --rubik: "Rubik", sans-serif;
-  --openSans: "OpenSans", sans-serif;
-  --regular: 400;
-  --medium: 500;
-  --semiBold: 600;
+/* Tipografías */
+$rubik: "Rubik", sans-serif;
+$openSans: "OpenSans", sans-serif;
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
 
-  /* Colores */
-  --aqua: #14d9c4;
-  --aqua09: rgba(20, 217, 196, 0.9);
-  --blueGreen: #099d8d;
-  --black: #000;
-  --blackParagraph: #54585a;
-  --coolGrey: rgba(184, 184, 185, 0.2);
-  --blackBorder: rgba(0, 0, 0, 0.08);
-  --white: #fff;
-}
+/* Colores */
+$aqua: #14d9c4;
+$aqua09: rgba(20, 217, 196, 0.9);
+$blueGreen: #099d8d;
+$black: #000;
+$blackParagraph: #54585a;
+$coolGrey: rgba(184, 184, 185, 0.2);
+$coolGreyHard: rgb(184, 184, 185);
+$blackBorder: rgba(0, 0, 0, 0.08);
+$white: #fff;

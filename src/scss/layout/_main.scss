@@ -8,21 +8,21 @@
     padding: 76rem 15rem 15rem 15rem;
 
     & h2 {
-      font-family: var(--rubik);
+      font-family: $rubik;
       font-size: 24rem;
-      font-weight: var(--medium);
+      font-weight: $medium;
       line-height: 45rem;
       text-transform: uppercase;
-      color: var(--aqua);
+      color: $aqua;
     }
 
     & p {
       padding: 15rem 0;
-      font-family: var(--openSans);
+      font-family: $openSans;
       font-size: 16rem;
-      font-weight: var(--regular);
+      font-weight: $regular;
       line-height: 24rem;
-      color: var(--blackParagraph);
+      color: $blackParagraph;
     }
   }
   /* END OF MAIN-TEAM */
@@ -43,7 +43,7 @@
       height: 30rem;
       z-index: 10;
       transform: rotate(45deg);
-      background-color: var(--white);
+      background-color: $white;
     }
   }
   /* END OF DIAMOND */
@@ -54,27 +54,27 @@
     top: -30rem;
     padding: 0rem 15rem 45rem 15rem;
     margin-bottom: -30rem;
-    background-color: var(--coolGrey);
+    background-color: $coolGrey;
   }
 
   &__wots article h2 {
     padding: 30rem 0 0 0;
-    font-family: var(--rubik);
+    font-family: $rubik;
     font-size: 22rem;
-    font-weight: var(--medium);
+    font-weight: $medium;
     line-height: 45rem;
     text-transform: capitalize;
-    color: var(--blueGreen);
+    color: $blueGreen;
     top: 46px;
     min-height: 50px; /* Mínimo de alto para que no pise con el footer*/
   }
 
   &__wots article p {
-    font-family: var(--openSans);
+    font-family: $openSans;
     font-size: 16rem;
-    font-weight: var(--regular);
+    font-weight: $regular;
     line-height: 24rem;
-    color: var(--blackParagraph);
+    color: $blackParagraph;
   }
   /* END OF MAIN WOTS */
 
@@ -84,12 +84,12 @@
 
     & h2 {
       padding: 30rem 0;
-      font-family: var(--rubik);
+      font-family: $rubik;
       font-size: 24rem;
-      font-weight: var(--medium);
+      font-weight: $medium;
       line-height: 45rem;
       text-transform: uppercase;
-      color: var(--blueGreen);
+      color: $blueGreen;
     }
 
     & article {
@@ -101,28 +101,28 @@
       & .img-mau {
         width: 190rem;
         height: 190rem;
-        border: solid 5rem var(--blackBorder);
+        border: solid 5rem $blackBorder;
         border-radius: 4rem;
         background-size: contain;
       }
 
       & h4 {
         padding-top: 15rem;
-        font-family: var(--openSans);
+        font-family: $openSans;
         font-size: 20rem;
-        font-weight: var(--regular);
+        font-weight: $regular;
         line-height: 45rem;
         text-transform: capitalize;
-        color: var(--black);
+        color: $black;
       }
 
       & p {
         padding-bottom: 15rem;
-        font-family: var(--openSans);
+        font-family: $openSans;
         font-size: 16rem;
-        font-weight: var(--regular);
+        font-weight: $regular;
         line-height: 24rem;
-        color: var(--blackParagraph);
+        color: $blackParagraph;
       }
 
       & .some-mau {
@@ -134,9 +134,9 @@
         & a i,
         span {
           font-size: 15rem;
-          font-weight: var(--regular);
+          font-weight: $regular;
           line-height: 30rem;
-          color: var(--blueGreen);
+          color: $blueGreen;
         }
 
         & i:hover {
