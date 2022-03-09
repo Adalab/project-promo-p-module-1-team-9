@@ -2,6 +2,8 @@
   // padding: 30rem;
   border-top: solid 1rem $coolGreyHard;
   flex-direction: column;
+  justify-content: center;
+  text-align: center;
 
   display: grid;
   grid-template-rows: 50rem 80rem 120rem;
@@ -22,6 +24,8 @@
     font-size: 14rem;
     line-height: 20rem;
     @media all and (min-width: 768px) {
+      display: flex;
+      justify-content: flex-start;
       padding-top: 6rem;
     }
   }
@@ -75,5 +79,9 @@
   }
   & a {
     max-height: 60rem;
+    @media all and (min-width: 768px) {
+      display: flex;
+      justify-content: flex-start;
+    }
   }
 }
