@@ -1,41 +1,79 @@
 .footer {
-  padding: 30rem;
+  // padding: 30rem;
   border-top: solid 1rem $coolGreyHard;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+
+  display: grid;
+  grid-template-rows: 50rem 80rem 120rem;
+
+  @media all and (min-width: 768px) {
+    padding: 23rem 45rem 60rem 45rem;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 23rem 138rem 51rem 138rem;
+  }
 
   &__small {
-    width: 100%;
+    padding-top: 30rem;
     color: $coolGreyHard;
     font-family: $openSans;
     font-size: 14rem;
     line-height: 20rem;
+    @media all and (min-width: 768px) {
+      padding-top: 6rem;
+    }
   }
 
   &__links {
     width: 100%;
+    max-height: 60rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 20rem;
     line-height: 20rem;
+
+    @media all and (min-width: 768px) {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      text-align: right;
+
+      padding-top: 0rem;
+
+      grid-row: span 2;
+    }
+  }
+
+  & ul li {
+    line-height: 20rem;
   }
 
   & ul li a {
     width: 100%;
+    max-height: 60rem;
     text-transform: uppercase;
     font-family: $openSans;
     font-weight: $semiBold;
     font-size: 14rem;
     color: $blackParagraph;
     line-height: 20rem;
+    @media all and (min-width: 768px) {
+      line-height: 30rem;
+    }
   }
 
   &__logo {
-    width: 115rem;
-    padding-top: 30rem;
+    height: 45rem;
+    width: 116rem;
+    margin: 30rem 0 45rem 0;
+    @media all and (min-width: 768px) {
+      margin: 15rem 0 0 0;
+    }
+  }
+  & a {
+    max-height: 60rem;
   }
 }

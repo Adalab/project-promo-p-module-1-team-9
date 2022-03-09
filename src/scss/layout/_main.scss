@@ -10,6 +10,9 @@
     @media all and (min-width: 768px) {
       padding: 45rem 45rem 60rem 45rem;
     }
+    @media all and (min-width: 1200px) {
+      padding: 45rem 300rem 60rem 300rem;
+    }
 
     & h2 {
       font-family: $rubik;
@@ -69,10 +72,18 @@
       display: flex;
       flex-direction: row;
     }
+
+    @media all and (min-width: 1200px) {
+      padding: 45rem 115rem 60rem 115rem;
+    }
   }
   &__wots article {
     @media all and (min-width: 768px) {
       padding: 0 15rem;
+      flex-basis: 50%;
+    }
+    @media all and (min-width: 1200px) {
+      padding: 0 23rem;
       flex-basis: 50%;
     }
   }
@@ -157,6 +168,12 @@
           height: 215rem;
           min-height: 215rem;
         }
+        @media all and (min-width: 1200px) {
+          width: 288rem;
+          min-width: 288rem;
+          height: 288rem;
+          min-height: 288rem;
+        }
       }
 
       & h4 {
@@ -217,6 +234,13 @@
         text-align: right;
         padding-right: 30rem;
       }
+
+      @media all and (min-width: 1200px) {
+        padding-right: 45rem;
+        & p {
+          padding-left: 255rem;
+        }
+      }
     }
 
     .switch-left .container-mau {
@@ -224,6 +248,12 @@
         align-items: flex-start;
         text-align: left;
         padding-left: 30rem;
+      }
+      @media all and (min-width: 1200px) {
+        padding-left: 45rem;
+        & p {
+          padding-right: 255rem;
+        }
       }
     }
   }

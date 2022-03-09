@@ -31,6 +31,9 @@
       padding: 0 45rem;
       text-align: left;
       flex-grow: 1;
+      @media all and (min-width: 1200px) {
+        padding: 0 138rem;
+      }
     }
   }
 
@@ -53,6 +56,9 @@
       padding: 0 20rem 0 0;
       background-color: $blueGreen;
       justify-content: flex-end;
+    }
+    @media all and (min-width: 1200px) {
+      padding: 0 118rem 0 0;
     }
 
     & li {
@@ -84,6 +90,15 @@
     padding: 15rem 30rem;
     text-align: left;
     left: 46rem;
+    top: 341rem;
+    background-color: $white08;
+  }
+
+  @media all and (min-width: 1200px) {
+    width: 574rem;
+    padding: 15rem 30rem;
+    text-align: left;
+    left: 138rem;
     top: 341rem;
     background-color: $white08;
   }
