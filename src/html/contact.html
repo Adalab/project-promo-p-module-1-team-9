@@ -25,49 +25,74 @@
   </head>
 
   <body>
-    <include src="./partials/header.html switch_motto="motto_visible""></include>
-  
+    <include src="./partials/header.html"></include>
+
     <main>
-        <section class="section">
-            <h1 class="contact__title">Contacto</h1>
-            <p class="text">¿Te interesa trabajar con nosotras? Para cualquier duda sobre el equipo o sobre nuestra forma de trabajar no dudes en contactarnos. Rellena el formulario y contactaremos contigo lo antes posible. Pronto recibirás noticias nuestras.</p>
-            <small>Todos los campos marcados con <span>*</span> son obligatorios.</small>
+      <section class="section">
+        <h1 class="contact__title">Contacto</h1>
+        <p class="text">
+          ¿Te interesa trabajar con nosotras? Para cualquier duda sobre el
+          equipo o sobre nuestra forma de trabajar no dudes en contactarnos.
+          Rellena el formulario y contactaremos contigo lo antes posible. Pronto
+          recibirás noticias nuestras.
+        </p>
+        <small
+          >Todos los campos marcados con <span>*</span> son obligatorios.</small
+        >
 
-            <form action="" method="">
-                
-                <ul>
-                    <li>
-                        <label for="name">Nombre completo <span>*</span></label>
-                        <input id="name" name="name" type="text" placeholder="Nombre..." value="name" required="required"/>
-                    </li>
+        <form action="" method="">
+          <ul>
+            <li>
+              <label for="name">Nombre completo <span>*</span></label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Nombre..."
+                value="name"
+                required="required"
+              />
+            </li>
 
-                    <li>
-                        <label for="email">Email <span>*</span></label>
-                        <input id="email" name="email" type="email" placeholder="nombre.apellidos@mail.com" value="email" required="required"/>
-                    </li>
+            <li>
+              <label for="email">Email <span>*</span></label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="nombre.apellidos@mail.com"
+                value="email"
+                required="required"
+              />
+            </li>
 
-                    <li>
-                        <label for="phone">Teléfono <span>*</span></label>
-                        <input id="phone" name="phone" type="tel" placeholder="Ej: 123456789" value="phone" required="required"/>
-                    </li>
+            <li>
+              <label for="phone">Teléfono <span>*</span></label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="Ej: 123456789"
+                value="phone"
+                required="required"
+              />
+            </li>
 
-                    <li>
-                        <label for="message">Mensaje <span>*</span></label>
-                        <textarea id="message" name="message" placeholder="¿Qué necesitas?" value="message" required="required"></textarea>
-                    </li>
+            <li>
+              <label for="message">Mensaje <span>*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="¿Qué necesitas?"
+                value="message"
+                required="required"
+              ></textarea>
+            </li>
 
-                    <li><input type="submit" value="Enviar"/></li>
-
-                </ul>
-
-
-            </form>
-        </section>
-
-
-
-
-
+            <li><input type="submit" value="Enviar" /></li>
+          </ul>
+        </form>
+      </section>
     </main>
     <include src="./partials/footer.html"></include>
   </body>
