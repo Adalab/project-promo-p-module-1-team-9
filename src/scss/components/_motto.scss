@@ -1,0 +1,39 @@
+.motto {
+  width: 290rem;
+  height: 80rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 15px;
+  top: 387rem;
+  text-align: center;
+  padding: 0 15rem;
+  background-color: $white;
+
+  @media all and (min-width: 768px) {
+    width: 441rem;
+    padding: 15rem 30rem;
+    text-align: left;
+    left: 46rem;
+    top: 341rem;
+    background-color: $white08;
+  }
+
+  @media all and (min-width: 1200px) {
+    width: 574rem;
+    padding: 15rem 30rem;
+    text-align: left;
+    left: 138rem;
+    top: 341rem;
+    background-color: $white08;
+  }
+
+  & p {
+    font-family: $openSans;
+    font-size: 18rem;
+    font-weight: $semiBold;
+    color: $black;
+    line-height: 25rem;
+  }
+}

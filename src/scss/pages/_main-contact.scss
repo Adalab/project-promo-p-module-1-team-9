@@ -1,0 +1,186 @@
+.contact {
+  padding: 30rem 15rem 60rem 15rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+
+  &__title {
+    max-width: $max-width-form-mobile;
+    padding-bottom: 15rem;
+
+    font-family: $rubik;
+    font-size: 24rem;
+    font-weight: $medium;
+    line-height: 45rem;
+    text-transform: uppercase;
+    color: $blueGreen;
+
+    @media (min-width: $break_point_tablet) {
+      max-width: $max-width-form-tablet;
+    }
+    @media (min-width: $break_point_desktop) {
+      max-width: $max-width-form-desktop;
+    }
+  }
+
+  &__paragraph {
+    max-width: $max-width-form-mobile;
+    padding-bottom: 30rem;
+
+    font-family: $openSans;
+    font-size: 16rem;
+    font-weight: $regular;
+    line-height: 24rem;
+    color: $blackParagraph;
+
+    @media (min-width: $break_point_tablet) {
+      max-width: $max-width-form-tablet;
+    }
+    @media (min-width: $break_point_desktop) {
+      max-width: $max-width-form-desktop;
+    }
+  }
+
+  &__small {
+    max-width: $max-width-form-mobile;
+    padding-bottom: 58rem;
+
+    font-family: $openSans;
+    font-size: 12rem;
+    font-weight: $regular;
+    line-height: 24rem;
+    color: $blackParagraph;
+
+    @media (min-width: $break_point_tablet) {
+      max-width: $max-width-form-tablet;
+    }
+    @media (min-width: $break_point_desktop) {
+      max-width: $max-width-form-desktop;
+    }
+  }
+
+  .contact-asterisk {
+    font-family: $openSans;
+    font-size: 12rem;
+    font-weight: $regular;
+    line-height: 24rem;
+    color: $aqua;
+  }
+
+  &__form {
+    width: 100%;
+    max-width: $max-width-form-mobile;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $break_point_tablet) {
+      max-width: $max-width-form-tablet;
+    }
+    @media (min-width: $break_point_desktop) {
+      max-width: $max-width-form-desktop;
+    }
+
+    &__line-container {
+      @media (min-width: $break_point_desktop) {
+        display: grid;
+        grid-template-columns: 395rem auto;
+        column-gap: 45rem;
+      }
+    }
+
+    &__element {
+      &__label {
+        padding-bottom: 7rem;
+
+        display: block;
+
+        font-family: $openSans;
+        font-size: 14rem;
+        font-weight: $regular;
+        line-height: 24rem;
+        color: $blackParagraph;
+      }
+
+      &__input {
+        width: 100%;
+        height: 45rem;
+        padding: 11rem 15rem 15rem 15rem;
+        margin-bottom: 13rem;
+
+        font-family: $openSans;
+        font-size: 14rem;
+        font-weight: $regular;
+        line-height: 24rem;
+        color: $blackParagraph;
+
+        border: 1rem solid $coolGreyHard;
+        &::placeholder {
+          color: $coolGreyHard;
+        }
+        &:focus {
+          border: 1rem solid $aqua;
+        }
+      }
+
+      &__textarea {
+        width: 100%;
+        height: 105rem;
+        padding: 11rem 15rem 15rem 15rem;
+        margin-bottom: 30rem;
+
+        font-family: $openSans;
+        font-size: 14rem;
+        font-weight: $regular;
+        line-height: 24rem;
+        color: $blackParagraph;
+
+        border: 1rem solid $coolGreyHard;
+        &::placeholder {
+          color: $coolGreyHard;
+        }
+        &:focus {
+          border: 1rem solid $aqua;
+        }
+      }
+    }
+
+    &__submit {
+      height: 45rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-family: $openSans;
+      font-size: 16rem;
+      font-weight: $regular;
+      text-transform: uppercase;
+      line-height: 24rem;
+      color: $white;
+
+      border-radius: 4rem;
+      background-color: $blueGreen;
+      &:hover {
+        background-color: $aqua;
+      }
+
+      @media (min-width: $break_point_tablet) {
+        width: 206rem;
+        align-self: flex-end;
+      }
+      @media (min-width: $break_point_desktop) {
+        width: 278rem;
+      }
+    }
+  }
+}

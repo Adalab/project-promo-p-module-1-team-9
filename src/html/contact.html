@@ -1,99 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Tipografía -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Rubik:wght@500&amp;display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/016f8587a2.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/normalize.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <include src="./partials/global/head-contain.html"></include>
 
     <title>Contacto</title>
   </head>
 
   <body>
     <include src="./partials/header.html"></include>
-
-    <main>
-      <section class="section">
-        <h1 class="contact__title">Contacto</h1>
-        <p class="text">
-          ¿Te interesa trabajar con nosotras? Para cualquier duda sobre el
-          equipo o sobre nuestra forma de trabajar no dudes en contactarnos.
-          Rellena el formulario y contactaremos contigo lo antes posible. Pronto
-          recibirás noticias nuestras.
-        </p>
-        <small
-          >Todos los campos marcados con <span>*</span> son obligatorios.</small
-        >
-
-        <form action="" method="">
-          <ul>
-            <li>
-              <label for="name">Nombre completo <span>*</span></label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Nombre..."
-                value="name"
-                required="required"
-              />
-            </li>
-
-            <li>
-              <label for="email">Email <span>*</span></label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="nombre.apellidos@mail.com"
-                value="email"
-                required="required"
-              />
-            </li>
-
-            <li>
-              <label for="phone">Teléfono <span>*</span></label>
-              <input
-                id="phone"
-                name="phone"
-                type="tel"
-                placeholder="Ej: 123456789"
-                value="phone"
-                required="required"
-              />
-            </li>
-
-            <li>
-              <label for="message">Mensaje <span>*</span></label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="¿Qué necesitas?"
-                value="message"
-                required="required"
-              ></textarea>
-            </li>
-
-            <li><input type="submit" value="Enviar" /></li>
-          </ul>
-        </form>
-      </section>
-    </main>
+    <include src="./partials/main-contact.html"></include>
     <include src="./partials/footer.html"></include>
   </body>
 </html>

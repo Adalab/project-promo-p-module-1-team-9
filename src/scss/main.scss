@@ -1,6 +1,8 @@
-@import "core/reset";
+@import "core/normalize";
 @import "core/variables";
+@import "core/reset";
 @import "layout/header";
-@import "layout/main";
+@import "components/motto";
 @import "layout/footer";
-@import "pages/contact";
+@import "pages/main-index";
+@import "pages/main-contact";

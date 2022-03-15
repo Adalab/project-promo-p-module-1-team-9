@@ -1,0 +1,81 @@
+<main>
+  <section class="contact">
+    <h1 class="contact__title">Contacto</h1>
+    <p class="contact__paragraph">
+      ¿Te interesa trabajar con nosotras? Para cualquier duda sobre el equipo o
+      sobre nuestra forma de trabajar no dudes en contactarnos. Rellena el
+      formulario y contactaremos contigo lo antes posible. Pronto recibirás
+      noticias nuestras.
+    </p>
+    <small class="contact__small"
+      >Todos los campos marcados con <span class="contact-asterisk">*</span> son
+      obligatorios.</small
+    >
+
+    <form
+      class="contact__form"
+      action="https://formspree.io/f/mnqwzqpk"
+      method="post"
+    >
+      <div class="contact__form__element">
+        <label class="contact__form__element__label" for="name"
+          >Nombre completo <span class="contact-asterisk">*</span></label
+        >
+        <input
+          class="contact__form__element__input"
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Nombre..."
+          required="required"
+        />
+      </div>
+
+      <div class="contact__form__line-container">
+        <div class="contact__form__element contact__form__element--email">
+          <label class="contact__form__element__label" for="email"
+            >Email <span class="contact-asterisk">*</span></label
+          >
+          <input
+            class="contact__form__element__input contact__form__input--email"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="nombre.apellidos@mail.com"
+            required="required"
+          />
+        </div>
+
+        <div class="contact__form__element contact__form__element--phone">
+          <label
+            class="contact__form__element__label contact__form__input--phone"
+            for="phone"
+            >Teléfono</label
+          >
+          <input
+            class="contact__form__element__input"
+            id="phone"
+            type="tel"
+            name="phone"
+            placeholder="Ej: 123456789"
+          />
+        </div>
+      </div>
+
+      <div class="contact__form__element">
+        <label class="contact__form__element__label" for="message"
+          >Mensaje <span class="contact-asterisk">*</span></label
+        >
+        <textarea
+          class="contact__form__element__textarea"
+          id="message"
+          name="message"
+          placeholder="¿Qué necesitas?"
+          required="required"
+        ></textarea>
+      </div>
+
+      <input class="contact__form__submit" type="submit" value="Enviar" />
+    </form>
+  </section>
+</main>

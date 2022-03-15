@@ -1,6 +1,11 @@
 .main {
   width: 100%;
   min-width: 320rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   text-align: center;
 
   /* MAIN-TEAM */
@@ -9,9 +14,11 @@
 
     @media all and (min-width: 768px) {
       padding: 45rem 45rem 60rem 45rem;
+      max-width: $max-width-tablet;
     }
     @media all and (min-width: 1200px) {
       padding: 45rem 300rem 60rem 300rem;
+      max-width: $max-width-desktop;
     }
 
     & h2 {
@@ -61,6 +68,11 @@
 
   /* MAIN WOTS */
   &__wots {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
     position: relative;
     top: -30rem;
     padding: 0rem 15rem 45rem 15rem;
@@ -76,15 +88,27 @@
     @media all and (min-width: 1200px) {
       padding: 45rem 115rem 60rem 115rem;
     }
-  }
-  &__wots article {
-    @media all and (min-width: 768px) {
-      padding: 0 15rem;
-      flex-basis: 50%;
-    }
-    @media all and (min-width: 1200px) {
-      padding: 0 23rem;
-      flex-basis: 50%;
+
+    &__container {
+      @media all and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: $max-width-tablet;
+      }
+      @media all and (min-width: 1200px) {
+        max-width: $max-width-desktop;
+      }
+
+      & article {
+        @media all and (min-width: 768px) {
+          padding: 0 15rem;
+          flex-basis: 50%;
+        }
+        @media all and (min-width: 1200px) {
+          padding: 0 23rem;
+          flex-basis: 50%;
+        }
+      }
     }
   }
 
@@ -118,6 +142,10 @@
 
     @media all and (min-width: 768px) {
       padding: 0 45rem;
+      max-width: $max-width-tablet;
+    }
+    @media all and (min-width: 1200px) {
+      max-width: $max-width-desktop;
     }
 
     & h2 {
