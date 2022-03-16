@@ -46,6 +46,9 @@
     color: $white;
     background-color: $blueGreen;
 
+    &:hover {
+      color: $aqua;
+    }
     @media all and (min-width: 768px) {
       padding: 0 45rem;
       text-align: left;
@@ -86,6 +89,10 @@
       & li {
         font-size: inherit;
         text-transform: uppercase;
+
+        &:hover {
+          color: $aqua;
+        }
 
         @media all and (min-width: 768px) {
           padding: 0 10rem;

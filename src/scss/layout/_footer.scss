@@ -58,6 +58,10 @@
 
       & ul li {
         line-height: 20rem;
+        color: $blackParagraph;
+        &:hover {
+          color: $blueGreen;
+        }
         & a {
           width: 100%;
           max-height: 60rem;
@@ -69,7 +73,7 @@
           font-family: $openSans;
           font-weight: $semiBold;
           font-size: 14rem;
-          color: $blackParagraph;
+
           line-height: 20rem;
           @media all and (min-width: 768px) {
             line-height: 30rem;
