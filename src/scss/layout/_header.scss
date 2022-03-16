@@ -1,9 +1,10 @@
 .header {
   width: 100%;
   height: 421rem;
-  background-image: url(../images/coding.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: url(../images/coding.png);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  background-color: #020b11;
 
   @media all and (min-width: 768px) {
     display: flex;
@@ -14,7 +15,25 @@
     }
   }
 
+  &__video {
+    position: absolute;
+    top: 105rem;
+    left: 50%;
+
+    width: 100%;
+    max-height: calc(421rem - 105rem);
+
+    transform: translate(-50%);
+    z-index: 0;
+
+    @media all and (min-width: 768px) {
+      top: 60rem;
+      max-height: calc(421rem - 60rem);
+    }
+  }
+
   &__title {
+    z-index: 10;
     height: 60rem;
     margin: 0;
     line-height: 60rem;
@@ -37,36 +56,40 @@
     }
   }
 
-  &__links {
-    width: 100%;
-    height: 45rem;
-    font-size: 15rem;
-    font-family: $rubik;
-    font-weight: $medium;
-    line-height: 30rem;
-    color: $white;
-    background-color: $aqua09;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  &__nav {
+    z-index: 10;
 
-    @media all and (min-width: 768px) {
-      height: 60rem;
-      padding: 0 20rem 0 0;
-      background-color: $blueGreen;
-      justify-content: flex-end;
-    }
-    @media all and (min-width: 1200px) {
-      padding: 0 118rem 0 0;
-    }
-
-    & li {
-      font-size: inherit;
-      text-transform: uppercase;
+    &__links {
+      width: 100%;
+      height: 45rem;
+      font-size: 15rem;
+      font-family: $rubik;
+      font-weight: $medium;
+      line-height: 30rem;
+      color: $white;
+      background-color: $aqua09;
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
 
       @media all and (min-width: 768px) {
-        padding: 0 10rem;
+        height: 60rem;
+        padding: 0 20rem 0 0;
+        background-color: $blueGreen;
+        justify-content: flex-end;
+      }
+      @media all and (min-width: 1200px) {
+        padding: 0 118rem 0 0;
+      }
+
+      & li {
+        font-size: inherit;
+        text-transform: uppercase;
+
+        @media all and (min-width: 768px) {
+          padding: 0 10rem;
+        }
       }
     }
   }

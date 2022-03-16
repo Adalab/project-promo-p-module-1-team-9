@@ -190,6 +190,14 @@
         border-radius: 4rem;
         background-size: contain;
 
+        //
+        //
+        //
+        filter: saturate(0%);
+        //
+        //
+        //
+
         @media all and (min-width: 768px) {
           width: 215rem;
           min-width: 215rem;
@@ -211,10 +219,20 @@
         font-weight: $regular;
         line-height: 45rem;
         text-transform: capitalize;
-        color: $black;
+        color: $col_grey_off;
+
         @media all and (min-width: 768px) {
           padding-top: 0;
         }
+      }
+
+      & .epiteto {
+        font-family: $openSans;
+        font-size: 24rem;
+        font-weight: $regular;
+        line-height: 45rem;
+        text-transform: capitalize;
+        color: $blueGreen;
       }
 
       & p {
@@ -223,7 +241,12 @@
         font-size: 16rem;
         font-weight: $regular;
         line-height: 24rem;
-        color: $blackParagraph;
+
+        //
+        //
+        color: $col_grey_off;
+        //
+        //
       }
 
       & .some-mau {
@@ -237,7 +260,7 @@
           font-size: 15rem;
           font-weight: $regular;
           line-height: 30rem;
-          color: $blueGreen;
+          color: $col_grey_off;
         }
 
         & i:hover {
@@ -281,6 +304,247 @@
         padding-left: 45rem;
         & p {
           padding-right: 255rem;
+        }
+      }
+    }
+
+    .article__container.switch-left {
+      // margin-bottom: 50rem;
+      // background-color: #ddd;
+
+      position: relative;
+      overflow: hidden;
+
+      & .flash {
+        width: 10%;
+        height: 150%;
+        position: absolute;
+        top: -25%;
+        right: -15%;
+        z-index: 10;
+        transform: rotate(35deg);
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.5) 35%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        // background-color: rebeccapurple;
+
+        animation-name: flash-action-left;
+        animation-delay: 0s;
+        animation-duration: 2s;
+        animation-direction: normal;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes flash-action-left {
+        0% {
+          right: -15%;
+        }
+        100% {
+          right: +115%;
+        }
+      }
+
+      & .img-mau {
+        animation-name: flash-img-color-left;
+        animation-delay: 0.6s;
+        animation-duration: 1s;
+        animation-direction: normal;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        @media all and (min-width: 768px) {
+          animation-delay: 0.8s;
+        }
+      }
+
+      @keyframes flash-img-color-left {
+        0% {
+          filter: saturate(0%);
+        }
+        100% {
+          filter: saturate(100%);
+        }
+      }
+
+      & .container-mau {
+        & h4,
+        p {
+          animation-name: flash-text-color;
+          animation-delay: 0.4s;
+          animation-duration: 1s;
+          animation-direction: normal;
+          animation-timing-function: ease;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+        }
+        @keyframes flash-text-color {
+          0% {
+            color: $col_grey_off;
+          }
+          100% {
+            color: $blackParagraph;
+          }
+        }
+      }
+
+      & .some-mau {
+        width: 124rem;
+        height: 30rem;
+        display: flex;
+        justify-content: space-between;
+
+        & a i,
+        span {
+          font-size: 15rem;
+          font-weight: $regular;
+          line-height: 30rem;
+
+          animation-name: flash-icon-color;
+          animation-delay: 0.6s;
+          animation-duration: 1s;
+          animation-direction: normal;
+          animation-timing-function: ease;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          @media all and (min-width: 768px) {
+            animation-delay: 0.1s;
+          }
+        }
+        @keyframes flash-icon-color {
+          0% {
+            color: $col_grey_off;
+          }
+          100% {
+            color: $blueGreen;
+          }
+        }
+      }
+    }
+
+    .article__container.switch-right {
+      // margin-bottom: 50rem;
+      // background-color: #ddd;
+
+      position: relative;
+      overflow: hidden;
+
+      & .flash {
+        width: 10%;
+        height: 150%;
+        position: absolute;
+        top: -25%;
+        right: -15%;
+        z-index: 10;
+        transform: rotate(35deg);
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.5) 35%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        // background-color: rebeccapurple;
+
+        animation-name: flash-action-right;
+        animation-delay: 0s;
+        animation-duration: 2s;
+        animation-direction: normal;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes flash-action-right {
+        0% {
+          right: -15%;
+        }
+        100% {
+          right: +115%;
+        }
+      }
+
+      & .img-mau {
+        animation-name: flash-img-color-right;
+        animation-delay: 0.6s;
+        animation-duration: 1s;
+        animation-direction: normal;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        @media all and (min-width: 768px) {
+          animation-delay: 0.2s;
+        }
+      }
+
+      @keyframes flash-img-color-right {
+        0% {
+          filter: saturate(0%);
+        }
+        100% {
+          filter: saturate(100%);
+        }
+      }
+
+      & .container-mau {
+        & h4,
+        p {
+          animation-name: flash-text-color;
+          animation-delay: 0.6s;
+          animation-duration: 1s;
+          animation-direction: normal;
+          animation-timing-function: ease;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+        }
+        @keyframes flash-text-color {
+          0% {
+            color: $col_grey_off;
+          }
+          100% {
+            color: $blackParagraph;
+          }
+        }
+      }
+
+      @media all and (min-width: 768px) {
+      }
+
+      & .some-mau {
+        width: 124rem;
+        height: 30rem;
+        display: flex;
+        justify-content: space-between;
+
+        & a i,
+        span {
+          font-size: 15rem;
+          font-weight: $regular;
+          line-height: 30rem;
+
+          animation-name: flash-icon-color;
+          animation-delay: 0.3s;
+          animation-duration: 1s;
+          animation-direction: normal;
+          animation-timing-function: ease;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          @media all and (min-width: 768px) {
+            animation-delay: 0.1s;
+          }
+        }
+        @keyframes flash-icon-color {
+          0% {
+            color: $col_grey_off;
+          }
+          100% {
+            color: $blueGreen;
+          }
         }
       }
     }

@@ -1,0 +1,61 @@
+.help-message {
+  display: none;
+  @media all and (min-width: $break_point_tablet) {
+    width: 100%;
+    height: 100rem;
+    margin-bottom: 30rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: #00cc44;
+    background-color: $col_black_111;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__paragraph--top {
+    border-right: 2px solid #fff;
+
+    white-space: nowrap; /* keep text in one line */
+    overflow: hidden; /* hide text behind the cursor */
+    margin: 0 auto;
+    font-family: $major;
+    text-transform: lowercase;
+
+    /* define animation types for text + cursor */
+    animation: animated-text 6s steps(30, end) 1s infinite normal both,
+      animated-cursor 900ms steps(30, end) infinite;
+
+    @media all and (min-width: $break_point_tablet) {
+      max-width: 80%;
+    }
+    @media all and (min-width: $break_point_desktop) {
+      max-width: 60%;
+    }
+  }
+}
+
+/* the cursor, blinking animation */
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.8);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* the text, movement */
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}

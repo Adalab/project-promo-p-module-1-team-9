@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Tipografía -->
+    <link <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Rubik:wght@500&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
       rel="stylesheet"
     />
 
@@ -18,8 +20,8 @@
     ></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+
 
     <title>Codebreakers</title>
   </head>
@@ -27,8 +29,8 @@
   <body>
     <header class="header">
       <h1 class="header__title">Codebreakers</h1>
-      <nav>
-        <ul class="header__links">
+      <nav class="header__nav">
+        <ul class="header__nav__links">
           <li><a href="./index.html#team">Equipo</a></li>
           <li>
             <a href="./index.html#aboutus">Quiénes somos</a>
@@ -36,74 +38,115 @@
           <li><a href="./contact.html">Contacto</a></li>
         </ul>
       </nav>
-      <div class="motto">
-        <p>Making a difference with inclusive coding.</p>
-      </div>
-
+      <video
+        class="header__video"
+        src="./assets/images/codebreakers.mp4"
+        muted="muted"
+        autoplay="autoplay"
+        preload="auto"
+      ></video>
     </header>
+
+    <div class="motto">
+      <p>Making a difference with inclusive coding.</p>
+    </div>
 
     <main class="main">
       <section class="main__team">
         <h2 id="team">Equipo</h2>
         <p>
-          Si algo nos caracteriza como equipo, es nuestro nexo de unión. Necesitábamos un giro en nuestras vidas y aprender a ser programadoras. Era parte de ese punto de no retorno que tanto anhelábamos.
+          Si algo nos caracteriza como equipo, es nuestro nexo de unión. Necesitábamos
+          un giro en nuestras vidas, y aprender a ser programadoras era parte de ese
+          punto de no retorno que tanto anhelábamos.
         </p>
         <p>
-          Somos un equipo con un gran poder de adaptación al medio y somos capaces de enfrentarnos a cualquier obstáculo que se nos ponga por delante.</p>
-        <p>
-          Inquietas y conscientes de la gran necesidad que hay de cambiar las cosas, tratamos de superarnos en cada nuevo reto que se nos presenta. Tenemos una constante en nuestro día a día: romper el código para aprender desde distintos puntos de vista.
+          Somos un equipo con un gran poder de adaptación al medio y somos capaces de
+          enfrentarnos a cualquier obstáculo que se nos ponga por delante.
         </p>
         <p>
-          /* Inclusivas, multidisciplinares, resolutivas, empáticas */
+          Inquietas y conscientes de la gran necesidad que hay de cambiar las cosas,
+          tratamos de superarnos en cada nuevo reto que se nos presenta. Tenemos una
+          constante en nuestro día a día: romper el código para aprender desde
+          distintos puntos de vista.
         </p>
+
+        <div class="text__animated">
+          <div class="content">
+            <div class="content__container">
+              <p class="content__container__text">Somos:</p>
+
+              <ul class="content__container__list">
+                <li class="content__container__list__item">¡Inclusivas!</li>
+                <li class="content__container__list__item">¡Resolutivas!</li>
+                <li class="content__container__list__item">¡Empáticas!</li>
+                <li class="content__container__list__item">¡Capaces!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
       </section>
+
       <div class="main__diamond">
         <div class="main__diamond--rotate"></div>
       </div>
 
       <section class="main__wots">
-        <article>
-          <h2>Fortalezas</h2>
-          <p>
-            Nuestra mayor fuerza reside en la confianza que tenemos en el equipo.
-            Unidas desde el primer día y con un entorno de trabajo basado en el
-            respeto y la escucha activa. Nos apoyamos y respetamos nuestras propuestas
-            siempre aportando críticas constructivas.
-          </p>
-          <p>
-            Autónomas y dando valor constantemente, somos implacables buscando
-            soluciones.
-          </p>
-          <p>El compromiso con nuestro proyecto es uno de nuestros puntos fuertes.</p>
-        </article>
+        <div class="main__wots__container">
+          <article>
+            <h2>Fortalezas</h2>
+            <p>
+              Nuestra mayor fuerza reside en la confianza que tenemos en el equipo.
+              Unidas desde el primer día y con un entorno de trabajo basado en el
+              respeto y la escucha activa. Nos apoyamos y respetamos nuestras
+              propuestas siempre aportando críticas constructivas.
+            </p>
+            <p>
+              Autónomas y dando valor constantemente, somos implacables buscando
+              soluciones.
+            </p>
+            <p>
+              El compromiso con nuestro proyecto es uno de nuestros puntos fuertes.
+            </p>
+          </article>
 
-        <article>
-          <h2>Debilidades</h2>
-          <p>
-            Como todo equipo que comienza una nueva andadura, la falta de
-            conocimientos con alguna herramienta ha sido nuestro pequeño handicap.
-            Nuestras ganas de perfeccionar las cosas y nuestra autoexigencia han hecho
-            que nuestra gestión de alguna tarea haya sido errónea. Esto en algún
-            momento del proyecto nos ha podido jugar una mala pasada, nada que no se
-            pueda solucionar con una mejora en nuestra estimación del tiempo.
-          </p>
-        </article>
+          <article>
+            <h2>Debilidades</h2>
+            <p>
+              Como todo equipo que comienza una nueva andadura, la falta de
+              conocimientos con alguna herramienta ha sido nuestro pequeño handicap.
+              Nuestras ganas de perfeccionar las cosas y nuestra autoexigencia han
+              hecho que nuestra gestión de alguna tarea haya sido errónea. Esto en
+              algún momento del proyecto nos ha podido jugar una mala pasada, nada que
+              no se pueda solucionar con una mejora en nuestra estimación del tiempo.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section class="main__aboutus">
         <h2 id="aboutus">Quiénes somos</h2>
 
-        <article class="switch-left">
+        <article
+          id="article__container1"
+          class="switch-left"
+          onclick="article__container1.classList.toggle('article__container')"
+        >
+          <span class="flash"></span>
           <div class="img-mau img-mau-001"></div>
           <div class="container-mau">
             <h4>Analía Río</h4>
-            <p> Licenciada en Traducción e Interpretación, soy una apasionada de los
+            <h5 class="epiteto">Adler</h5>
+            <p>Licenciada en Traducción e Interpretación, soy una apasionada de los
           idiomas. La comunicación me fascina porque es la base de todas las
-          relaciones y considero que aprender un idioma es acercarse a otra cultura.
-          Esto me ha empujado a estudiar inglés, francés, alemán y, más recientemente,
+          relaciones y considero que aprender un idioma es acercarse a otra cultura.</p>
+            <p>Esto me ha empujado a estudiar inglés, francés, alemán y, más recientemente,
           chino, y precisamente por lo mismo me atrae la programación: es el lenguaje
           universal por excelencia, común a infinidad de culturas e indispensable en
           nuestra sociedad actual.</p>
+            <p></p>
+            <p></p>
+            <p></p>
             <div class="some-mau">
               <a href="#" target="_blank">
                 <i class="fa-brands fa-twitter"></i>
@@ -123,12 +166,21 @@
         </article>
 
 
-        <article class="switch-right">
+        <article
+          id="article__container2"
+          class="switch-right"
+          onclick="article__container2.classList.toggle('article__container')"
+        >
+          <span class="flash"></span>
           <div class="img-mau img-mau-002"></div>
           <div class="container-mau">
             <h4>Celia Rodríguez</h4>
-            <p>Graduada en Conservación-Restauración del Patrimonio Cultural y especializada en Arqueología, me encanta el mundo del Arte y la Historia. La creatividad y la imaginación son una parte muy importante en mi personalidad, siempre con ideas nuevas rondando en la cabeza. Adentrarme en el mundo de la programación ha sido mi primera gran decisión y estoy segura de que me va a ayudar a tomar las riendas de mi futuro.
-          </p>
+            <h5 class="epiteto">Inia Delphinus</h5>
+            <p>Graduada en Conservación-Restauración del Patrimonio Cultural y especializada en Arqueología, me encanta el mundo del Arte y la Historia.</p>
+            <p>La creatividad y la imaginación son una parte muy importante en mi personalidad, siempre con ideas nuevas rondando en la cabeza.</p>
+            <p>Adentrarme en el mundo de la programación ha sido mi primera gran decisión y estoy segura de que me va a ayudar a tomar las riendas de mi futuro.</p>
+            <p></p>
+            <p></p>
             <div class="some-mau">
               <a href="#" target="_blank">
                 <i class="fa-brands fa-twitter"></i>
@@ -148,15 +200,25 @@
         </article>
 
 
-        <article class="switch-left">
+        <article
+          id="article__container3"
+          class="switch-left"
+          onclick="article__container3.classList.toggle('article__container')"
+        >
+          <span class="flash"></span>
           <div class="img-mau img-mau-003"></div>
           <div class="container-mau">
             <h4>Naiara Saratxaga</h4>
-            <p>Graduada en Diseño y Creaciones Digitales. Positiva al 100%, alegre por
+            <h5 class="epiteto">Katua</h5>
+            <p>Graduada en Diseño y Creaciones Digitales.</p>
+            <p>Positiva al 100%, alegre por
           naturaleza y de vez en cuando procrastinadora por necesidad. Siempre
-          buscando el lado bueno de las cosas. Loca por la música rock, la fotografía
-          y una buena conversación sobre cine. Amo pasar tiempo con mi familia y si es
-          viajando por el mundo mucho mejor. Cat Lover y admiradora de la gente
+          buscando el lado bueno de las cosas.</p>
+            <p>Loca por la música rock, la fotografía
+              y una buena conversación sobre cine.</p>
+            <p>Amo pasar tiempo con mi familia y si es
+          viajando por el mundo mucho mejor.</p>
+            <p>Cat Lover y admiradora de la gente
           creativa y apasionada de su trabajo.</p>
             <div class="some-mau">
               <a href="https://twitter.com/naiarasaratxaga" target="_blank">
@@ -177,14 +239,21 @@
         </article>
 
 
-        <article class="switch-right">
+        <article
+          id="article__container4"
+          class="switch-right"
+          onclick="article__container4.classList.toggle('article__container')"
+        >
+          <span class="flash"></span>
           <div class="img-mau img-mau-004"></div>
           <div class="container-mau">
             <h4>Satory Asensio</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
-          architecto eveniet minima et! Veniam rerum magni laboriosam quos est
-          repudiandae a suscipit nemo tenetur sequi, recusandae accusantium
-          consectetur, consequatur quae?</p>
+            <h5 class="epiteto">Protospatharia</h5>
+            <p>Me llamo Satory y soy una persona curiosa. Curiosa porque tengo siempre ganas de aprender y conocer más, y curiosa porque lo normal parece que me rebota y no se queda pegado a mi vida.</p>
+            <p>Soy ante todo alguien con ganas de cambiar las cosas, de mejorar un poco el entorno en el que me muevo, y de aportar desde mi perspectiva y conocimiento. Al final, el mundo siempre te termina devolviendo, y es más placentero caminar por él cuando lo cuidas un poquito.</p>
+            <p>Y es por eso, porque soy una persona curiosa, inquieta, y con ganas de mejora, que siempre ando buscando proyectos en los que implicarme y personas con las que compartirlos. Desde la base de la horizontalidad, del respeto, el cuidado, y el crecimiento personal y colectivo.</p>
+            <p>Y en este entorno que nos ocupa, soy una persona no binaria, transfemenina, con cierto gusto por los retos y juegos de ingenio, que trae la mochila del diseño y la enseñanza para nutrirse de herramientas y de ese modo conseguir que la magia de la programación pase también a mi lista de recursos.</p>
+            <p>¿Jugamos?</p>
             <div class="some-mau">
               <a href="#" target="_blank">
                 <i class="fa-brands fa-twitter"></i>
@@ -205,27 +274,35 @@
 
       </section>
 
+      <section class="help-message">
+        <div class="help-message__paragraph--top">
+          <a href="#">Si lees este mensaje y necesitas ayuda, ¡Contactanos!</a>
+        </div>
+      </section>
+
     </main>
 
     <footer class="footer">
-      <small class="footer__small">Codebreakers © 2022 </small>
-      <nav class="footer__links">
-        <ul>
-          <li><a href="./index.html#team">Equipo</a></li>
-          <li>
-            <a href="./index.html#aboutus">Quiénes somos</a>
-          </li>
-          <li>
-            <a href="http://adalab.es" target="_blank">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="http://adalab.es" target="_blank"
-        ><img
-          class="footer__logo"
-          src="./assets/images/logo-adalab.png"
-          alt="Logo Adalab"
-      /></a>
+      <div class="footer__container">
+        <small class="footer__container__small">Codebreakers © 2022 </small>
+        <nav class="footer__container__links">
+          <ul>
+            <li><a href="./index.html#team">Equipo</a></li>
+            <li>
+              <a href="./index.html#aboutus">Quiénes somos</a>
+            </li>
+            <li>
+              <a href="http://adalab.es" target="_blank">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="http://adalab.es" target="_blank"
+          ><img
+            class="footer__container__logo"
+            src="./assets/images/logo-adalab.png"
+            alt="Logo Adalab"
+        /></a>
+      </div>
     </footer>
 
   </body>

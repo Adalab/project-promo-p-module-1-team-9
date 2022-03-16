@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Tipografía -->
+    <link <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Rubik:wght@500&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
       rel="stylesheet"
     />
 
@@ -18,8 +20,8 @@
     ></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+
 
     <title>Contacto</title>
   </head>
@@ -27,8 +29,8 @@
   <body>
     <header class="header">
       <h1 class="header__title">Codebreakers</h1>
-      <nav>
-        <ul class="header__links">
+      <nav class="header__nav">
+        <ul class="header__nav__links">
           <li><a href="./index.html#team">Equipo</a></li>
           <li>
             <a href="./index.html#aboutus">Quiénes somos</a>
@@ -36,99 +38,118 @@
           <li><a href="./contact.html">Contacto</a></li>
         </ul>
       </nav>
-      <div class="motto">
-        <p>Making a difference with inclusive coding.</p>
-      </div>
-
+      <video
+        class="header__video"
+        src="./assets/images/codebreakers.mp4"
+        muted="muted"
+        autoplay="autoplay"
+        preload="auto"
+      ></video>
     </header>
 
-
     <main>
-      <section class="section">
+      <section class="contact">
         <h1 class="contact__title">Contacto</h1>
-        <p class="text">
-          ¿Te interesa trabajar con nosotras? Para cualquier duda sobre el
-          equipo o sobre nuestra forma de trabajar no dudes en contactarnos.
-          Rellena el formulario y contactaremos contigo lo antes posible. Pronto
-          recibirás noticias nuestras.
+        <p class="contact__paragraph">
+          ¿Te interesa trabajar con nosotras? Para cualquier duda sobre el equipo o
+          sobre nuestra forma de trabajar no dudes en contactarnos. Rellena el
+          formulario y contactaremos contigo lo antes posible. Pronto recibirás
+          noticias nuestras.
         </p>
-        <small
-          >Todos los campos marcados con <span>*</span> son obligatorios.</small
+        <small class="contact__small"
+          >Todos los campos marcados con <span class="contact-asterisk">*</span> son
+          obligatorios.</small
         >
 
-        <form action="" method="">
-          <ul>
-            <li>
-              <label for="name">Nombre completo <span>*</span></label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Nombre..."
-                value="name"
-                required="required"
-              />
-            </li>
+        <form
+          class="contact__form"
+          action="https://formspree.io/f/mnqwzqpk"
+          method="post"
+        >
+          <div class="contact__form__element">
+            <label class="contact__form__element__label" for="name"
+              >Nombre completo <span class="contact-asterisk">*</span></label
+            >
+            <input
+              class="contact__form__element__input"
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Nombre..."
+              required="required"
+            />
+          </div>
 
-            <li>
-              <label for="email">Email <span>*</span></label>
+          <div class="contact__form__line-container">
+            <div class="contact__form__element contact__form__element--email">
+              <label class="contact__form__element__label" for="email"
+                >Email <span class="contact-asterisk">*</span></label
+              >
               <input
+                class="contact__form__element__input contact__form__input--email"
                 id="email"
-                name="email"
                 type="email"
+                name="email"
                 placeholder="nombre.apellidos@mail.com"
-                value="email"
                 required="required"
               />
-            </li>
+            </div>
 
-            <li>
-              <label for="phone">Teléfono <span>*</span></label>
+            <div class="contact__form__element contact__form__element--phone">
+              <label
+                class="contact__form__element__label contact__form__input--phone"
+                for="phone"
+                >Teléfono</label
+              >
               <input
+                class="contact__form__element__input"
                 id="phone"
-                name="phone"
                 type="tel"
+                name="phone"
                 placeholder="Ej: 123456789"
-                value="phone"
-                required="required"
               />
-            </li>
+            </div>
+          </div>
 
-            <li>
-              <label for="message">Mensaje <span>*</span></label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="¿Qué necesitas?"
-                value="message"
-                required="required"
-              ></textarea>
-            </li>
+          <div class="contact__form__element">
+            <label class="contact__form__element__label" for="message"
+              >Mensaje <span class="contact-asterisk">*</span></label
+            >
+            <textarea
+              class="contact__form__element__textarea"
+              id="message"
+              name="message"
+              placeholder="¿Qué necesitas?"
+              required="required"
+            ></textarea>
+          </div>
 
-            <li><input type="submit" value="Enviar" /></li>
-          </ul>
+          <input class="contact__form__submit" type="submit" value="Enviar" />
         </form>
       </section>
     </main>
+
     <footer class="footer">
-      <small class="footer__small">Codebreakers © 2022 </small>
-      <nav class="footer__links">
-        <ul>
-          <li><a href="./index.html#team">Equipo</a></li>
-          <li>
-            <a href="./index.html#aboutus">Quiénes somos</a>
-          </li>
-          <li>
-            <a href="http://adalab.es" target="_blank">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="http://adalab.es" target="_blank"
-        ><img
-          class="footer__logo"
-          src="./assets/images/logo-adalab.png"
-          alt="Logo Adalab"
-      /></a>
+      <div class="footer__container">
+        <small class="footer__container__small">Codebreakers © 2022 </small>
+        <nav class="footer__container__links">
+          <ul>
+            <li><a href="./index.html#team">Equipo</a></li>
+            <li>
+              <a href="./index.html#aboutus">Quiénes somos</a>
+            </li>
+            <li>
+              <a href="http://adalab.es" target="_blank">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="http://adalab.es" target="_blank"
+          ><img
+            class="footer__container__logo"
+            src="./assets/images/logo-adalab.png"
+            alt="Logo Adalab"
+        /></a>
+      </div>
     </footer>
 
   </body>

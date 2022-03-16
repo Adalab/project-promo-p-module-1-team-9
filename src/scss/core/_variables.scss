@@ -1,6 +1,7 @@
 /* Tipografías */
 $rubik: "Rubik", sans-serif;
 $openSans: "OpenSans", sans-serif;
+$major: "Major Mono Display", monospace;
 $regular: 400;
 $medium: 500;
 $semiBold: 600;
@@ -10,12 +11,15 @@ $aqua: #14d9c4;
 $aqua09: rgba(20, 217, 196, 0.9);
 $blueGreen: #099d8d;
 $black: #000;
+$col_black_111: #111;
 $blackParagraph: #54585a;
 $coolGrey: rgba(184, 184, 185, 0.2);
 $coolGreyHard: rgb(184, 184, 185);
+$col_grey_off: rgb(196, 196, 196);
 $blackBorder: rgba(0, 0, 0, 0.08);
 $white: rgb(255, 255, 255);
 $white08: rgba(255, 255, 255, 0.8);
+$white05: rgba(255, 255, 255, 0.5);
 
 // SIZES
 $break_point_tablet: 768px;
